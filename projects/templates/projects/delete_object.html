@@ -1,0 +1,15 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+
+<form>
+    <p>Are you sure you want to delete? {{object}}</p>
+    <a href = "{% url 'projects' %}">
+    <button> 
+        Go Back    
+    <button>
+    <input type="submit" value="Confrim">
+</form>
+
+{% endblock %}
